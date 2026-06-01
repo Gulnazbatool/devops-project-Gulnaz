@@ -26,14 +26,11 @@ steps:
       aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws
 
   - name: Build Docker Image
-    run: |
-      docker build -t devops-app .
+    run: docker build -t devops-app .
 
   - name: Tag Docker Image
-    run: |
-      docker tag devops-app:latest public.ecr.aws/y8p7o4b2/devops-app:latest
+    run: docker tag devops-app:latest public.ecr.aws/y8p7o4b2/devops-app:latest
 
   - name: Push Docker Image
-    run: |
-      docker push public.ecr.aws/y8p7o4b2/devops-app:latest
+    run: docker push public.ecr.aws/y8p7o4b2/devops-app:latest
 ```
