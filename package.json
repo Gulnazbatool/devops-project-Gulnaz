@@ -4,16 +4,4 @@
   "scripts": {
     "test": "echo \"Test passed\" && exit 0"
   }
-}{
-  "name": "devops-activity",
-  "version": "1.0.0",
-  "scripts": {
-<<<<<<< HEAD
-   "test": "echo \"Test passed\" && exit 0"
-  }
 }
-=======
-    "test": "echo \"Test passed\" && exit 0"
-  }
-}
->>>>>>> c6b0f3f8b2b815263577ce9d708cc45e30fd8db8
